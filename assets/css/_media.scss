@@ -1,0 +1,139 @@
+@media (max-width: 999px) {
+  .navbar {
+
+    &.scrolled .navbar-nav {
+      display: flex !important;
+      top: 74px;
+    }
+
+    .button-contain {
+      display: none;
+    }
+
+    .brand-name img {
+      width: 120px !important;
+    }
+
+    .hamburger{
+      display: block !important;
+    }
+
+    .navbar-nav {
+      width: 100%;
+      position: absolute;
+      top: 84px;
+      right: -100%;
+      height: 100vh;
+      flex-direction: column !important;
+      justify-content: flex-start !important;
+      background-color: var(--light-color);
+      padding: 40px 20px;
+      z-index: 999;
+      transition: all .3s linear;
+
+      li {
+        margin-inline-end: 0px !important;
+        padding: 10px 0px;
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.10);
+
+        &:last-child {
+          border-bottom: 0px !important;
+        }
+
+        a {
+          width: fit-content;
+        }
+      }
+
+      &.active-nav {
+        right: 0px !important;
+      }
+    }
+  }
+
+  h1, h2 {
+    font-size: 30px !important;
+
+    span {
+      font-size: 30px !important;
+    }
+  }
+
+  p {
+    font-size: 20px !important;
+
+    span {
+      font-size: 20px !important;
+    }
+  }
+
+  header {
+    padding: 100px 0px 0px;
+
+    .image-content {
+      height: 180px;
+    }
+  }
+
+  .sub-header {
+    padding: 120px 0px 40px;
+  }
+
+  .heading {
+    margin-bottom: 20px;
+
+    .see-more {
+      position: relative;
+      top: unset !important;
+      right: unset !important;
+      width: 100%;
+      justify-content: flex-end;
+      margin-top: 20px;
+    }
+  }
+
+  .about-us .image-content {
+    height: 200px;
+  }
+
+  footer .contain,
+  .platform .heading,
+  .features .heading {
+    width: 100% !important;
+  }
+
+  .features .box-contain .box  {
+    border-radius: 20px !important;
+  }
+
+  .platform::after,
+  .features::after, 
+  .about-us::after {
+    opacity: .5;
+  }
+
+  .platform .custom-box:nth-child(even) .box,
+  .platform .custom-box .box {
+    flex-direction: column;
+    
+    .image-content, .contain {
+      width: 100%;
+    }
+
+    .image-content {
+      height: 200px;
+    }
+  }
+
+  .platform .custom-box:nth-child(even) .box {
+    transform: translateX(0px);
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+
+  .copyright p {
+    font-size: 15px !important;
+  }
+}
