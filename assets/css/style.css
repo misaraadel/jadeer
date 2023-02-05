@@ -1016,6 +1016,7 @@ button {
   justify-content: center;
   border-radius: 6px;
   overflow: hidden;
+  outline: none;
 }
 .button-contain .custom-btn::after, .button-contain .custom-btn::before {
   content: "";
@@ -1056,7 +1057,7 @@ button {
   color: var(--gray-color);
 }
 .button-contain .custom-btn.blue-btn {
-  border: 1px solid var(--gray-color);
+  border: 1px solid var(--gray-color) !important;
   background-color: var(--light-color);
 }
 .button-contain .custom-btn.blue-btn::after, .button-contain .custom-btn.blue-btn::before {
@@ -1067,7 +1068,7 @@ button {
   color: var(--primary-color);
 }
 .button-contain .custom-btn.blue-btn:hover {
-  border-color: var(--gray-color);
+  border-color: var(--gray-color) !important;
   background-color: var(--light-color);
 }
 .button-contain .custom-btn.blue-btn:hover::after, .button-contain .custom-btn.blue-btn:hover::before {
@@ -1576,6 +1577,134 @@ header .contain p {
   z-index: -1;
   -webkit-animation: translateY 3s linear infinite;
           animation: translateY 3s linear infinite;
+}
+
+.contact-us {
+  width: 100%;
+  padding: 104px 0px 60px;
+  background-color: var(--light-color);
+  position: relative;
+  z-index: 9;
+}
+.contact-us .contact-form {
+  width: 100%;
+  padding: 32px;
+  background-color: var(--light-color);
+  box-shadow: 0 0 6px 0 rgba(54, 52, 99, 0.1490196078);
+  border-radius: 6px;
+  margin-bottom: 30px;
+}
+.contact-us .contact-form .form-contain .form-group {
+  width: 100%;
+  margin-bottom: 16px;
+}
+.contact-us .contact-form .form-contain .form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #363563;
+  display: block;
+  margin-bottom: 8px;
+}
+.contact-us .contact-form .form-contain .form-group .form-control {
+  width: 100%;
+  height: 44px;
+  background-color: #f7f6fa;
+  border-radius: 4px;
+  padding: 0px 20px;
+  border: 1px solid rgba(54, 53, 99, 0);
+  transition: border 0.3s linear;
+  color: var(--primary-color);
+  font-size: 15px;
+  font-weight: 500;
+}
+.contact-us .contact-form .form-contain .form-group .form-control::-moz-placeholder {
+  color: rgba(54, 53, 99, 0.5);
+  font-size: 14px;
+  font-weight: 500;
+}
+.contact-us .contact-form .form-contain .form-group .form-control:-ms-input-placeholder {
+  color: rgba(54, 53, 99, 0.5);
+  font-size: 14px;
+  font-weight: 500;
+}
+.contact-us .contact-form .form-contain .form-group .form-control::placeholder {
+  color: rgba(54, 53, 99, 0.5);
+  font-size: 14px;
+  font-weight: 500;
+}
+.contact-us .contact-form .form-contain .form-group .form-control:hover {
+  border-color: rgba(54, 53, 99, 0.5);
+}
+.contact-us .contact-form .form-contain .button-contain {
+  width: 100%;
+  margin: 16px 0px 24px;
+}
+.contact-us .contact-form .form-contain .button-contain .custom-btn {
+  width: 100%;
+}
+.contact-us .contact-form .form-contain .data {
+  font-size: 14px;
+  font-weight: 500;
+  color: #616161;
+  margin: 0px;
+}
+.contact-us .contact-form .form-contain .data a {
+  color: var(--primary-color);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: underline !important;
+}
+.contact-us .contact-form .image-content {
+  width: 100%;
+  height: 394px;
+}
+.contact-us .contact-form .image-content img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.contact-us .data {
+  width: 100%;
+}
+.contact-us .data h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #6b549e;
+}
+.contact-us .data p {
+  color: #3f3e6a;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+.contact-us .data .list {
+  margin-bottom: 12px;
+}
+.contact-us .data .list li {
+  -webkit-padding-start: 30px;
+          padding-inline-start: 30px;
+  position: relative;
+  z-index: 9;
+  color: #3f3e6a;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.contact-us .data .list li::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: url("../images/check.svg") center/contain no-repeat;
+  top: calc(50% - 12px);
+  right: 0;
+  z-index: -1;
+}
+.contact-us .data .custom-btn {
+  -webkit-margin-start: 0px !important;
+          margin-inline-start: 0px !important;
 }
 
 footer {
