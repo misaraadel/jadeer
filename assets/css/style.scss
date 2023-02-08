@@ -587,11 +587,6 @@ header {
 
     &:nth-child(even) .box {
       flex-direction: row-reverse;
-      transform: translateX(100px);
-
-      &:hover {
-        transform: translateY(-10px) translateX(100px);
-      }
     }
   }
 }

@@ -1506,10 +1506,6 @@ header .contain p {
 }
 .platform .custom-box:nth-child(even) .box {
   flex-direction: row-reverse;
-  transform: translateX(100px);
-}
-.platform .custom-box:nth-child(even) .box:hover {
-  transform: translateY(-10px) translateX(100px);
 }
 
 .message {
